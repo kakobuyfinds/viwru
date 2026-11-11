@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>OKEYHAUL spreadsheet guide | Finds, sizing and QC</title>
+  <meta name="description" content="Use this OKEYHAUL spreadsheet guide to browse HipobuyFind categories, compare measurements and QC photos, and estimate your total delivered cost.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="OKEYHAUL spreadsheet guide | Finds, sizing and QC">
+  <meta property="og:description" content="Browse HipobuyFind categories and learn what to check before keeping a product link.">
+  <meta name="theme-color" content="#f5f0e8">
+  <style>
+    :root{color-scheme:light;--paper:#f5f0e8;--ink:#24251f;--muted:#534e45;--line:#c8bfb0;--accent:#6b3426;--panel:#e8dfd0}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 system-ui,sans-serif}
+    a{color:inherit}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+    .wrap{width:min(70rem,calc(100% - 2rem));margin-inline:auto}
+    header{border-bottom:1px solid var(--line)}
+    .bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.25rem;padding-block:.85rem}
+    .brand{font-weight:800;text-decoration:none}
+    .catalog{color:var(--accent);text-underline-offset:.23em}
+    nav{padding-block:1rem;border-bottom:1px solid var(--line)}
+    .links{display:flex;flex-wrap:wrap;gap:.45rem;list-style:none;margin:0;padding:0}
+    .links a{display:block;padding:.36rem .65rem;border:1px solid var(--line);border-radius:.25rem;text-decoration:none}
+    .links a:hover{background:var(--panel);text-decoration:underline}
+    .hero{display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:clamp(1rem,5vw,4rem);padding-block:clamp(1.6rem,5vw,4rem)}
+    h1,h2,h3{line-height:1.12;text-wrap:balance}
+    h1{font:700 clamp(2.45rem,6vw,5rem)/1 Georgia,serif;margin:0 0 1rem;letter-spacing:-.045em}
+    h2{font:700 clamp(1.8rem,3.4vw,2.55rem)/1.12 Georgia,serif;margin:0 0 .85rem}
+    h3{font-size:1.2rem;margin:0 0 .55rem}
+    p{margin:.55rem 0 0}
+    .note,figcaption{color:var(--muted);font-size:.9rem}
+    figure{margin:0;min-width:0}
+    img{display:block;width:100%;height:auto;background:var(--panel)}
+    .hero img{aspect-ratio:1;object-fit:contain}
+    figcaption{padding:.55rem 0}
+    .topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+    .topics article{border-top:1px solid var(--line);padding-top:1rem}
+    .examples,.faq{margin-top:2.5rem}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem;margin-top:1rem}
+    .gallery img{aspect-ratio:1;object-fit:contain}
+    details{border-top:1px solid var(--line);padding:.8rem 0}
+    details:last-of-type{border-bottom:1px solid var(--line)}
+    summary{font-weight:700;cursor:pointer}
+    footer{margin-top:2rem;border-top:1px solid var(--line);padding-block:1rem}
+    @media(max-width:42rem){.hero,.topics{grid-template-columns:1fr}.hero figure{max-width:26rem}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":["WebPage","FAQPage"],
+    "inLanguage":"en",
+    "name":"OKEYHAUL spreadsheet guide | Finds, sizing and QC",
+    "description":"Use this OKEYHAUL spreadsheet guide to browse HipobuyFind categories, compare measurements and QC photos, and estimate your total delivered cost.",
+    "mainEntity":[
+      {"@type":"Question","name":"What is an OKEYHAUL spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"It is a list or directory used to organize product finds, source links and notes such as size, photos or weight. Check the current listing for the option you want."}},
+      {"@type":"Question","name":"Where do the category links go?","acceptedAnswer":{"@type":"Answer","text":"The category links open HipobuyFind. This is an independent guide with no official affiliation with OKEYHAUL or the brands pictured."}},
+      {"@type":"Question","name":"Can QC photos prove authenticity?","acceptedAnswer":{"@type":"Answer","text":"QC photos can show visible details such as stitching, color and labels. For authenticity, use a seller with verifiable provenance or seek independent authentication."}},
+      {"@type":"Question","name":"How do I estimate shipping before ordering?","acceptedAnswer":{"@type":"Answer","text":"Ask for the packed parcel weight and dimensions, then request a quote for your country and postal code. Check whether the carrier bills by actual or volumetric weight."}}
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/viwru/">
+</head>
+<body>
+  <!-- Research scope: Bing's first results page could not be verified. Related public results informed the topics of category browsing, source links, QC and shipping. -->
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="https://www.hipobuyfind.com">www.hipobuyfind.com</a>
+      <a class="catalog" href="https://www.hipobuyfind.com">Browse the catalog</a>
+    </div>
+  </header>
+  <nav class="wrap" aria-label="HipobuyFind product categories">
+    <ul class="links">
+      <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Shoes</a></li>
+      <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Hoodies/Sweaters</a></li>
+      <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-Shirts</a></li>
+      <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Jackets</a></li>
+      <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Pants/Shorts</a></li>
+      <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Headwear</a></li>
+      <li><a href="https://hipobuyfind.com/category-917-Sets.html">Sets</a></li>
+      <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Underwear/underpants</a></li>
+      <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Jersey</a></li>
+      <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessories</a></li>
+    </ul>
+  </nav>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">OKEYHAUL spreadsheet</h1>
+        <p>Start with a category, shortlist a few listings, and compare the exact size, color and seller link for each. This English-language guide explains what to record before you decide whether to order.</p>
+        <p class="note">Category shortcuts open HipobuyFind. Brand images show reference styles.</p>
+      </div>
+      <figure>
+        <img src="https://nikeclprod.vtexassets.com/arquivos/ids/160793/CW2288_111_A_PREM.jpg?v=637654399803530000&amp;width=640&amp;height=640" width="640" height="640" fetchpriority="high" alt="White Nike Air Force 1 ’07 low-top sneaker in side profile">
+        <figcaption>Nike Air Force 1 ’07</figcaption>
+      </figure>
+    </section>
+    <section aria-labelledby="guides">
+      <h2 id="guides">From product link to shortlist</h2>
+      <div class="topics">
+        <article>
+          <h3>Compare OKEYHAUL finds</h3>
+          <p>Start with one item type and a detail that matters, such as low-top sneakers with a wide toe box or a zip hoodie with a two-way zipper. Record the item name, selected color, seller listing, current availability and date checked. If two rows show the same catalog photo, open both listings and compare the variant names and seller details.</p>
+        </article>
+        <article>
+          <h3>Check OKEYHAUL product links</h3>
+          <p>Reopen the original product URL before saving it. On a Weidian, Taobao or 1688 listing, check the chosen size, color code and minimum order quantity, where shown. Save the exact variant in your notes so you can recover it if the link later opens on a different option.</p>
+        </article>
+        <article>
+          <h3>Review OKEYHAUL QC photos and sizing</h3>
+          <p>Compare the shoe insole length with a pair that fits. For T-shirts and jackets, compare flat chest width, shoulder width and sleeve length with a garment measured the same way. For caps and bracelets, check head circumference or inner wrist circumference against the relevant size chart. If inspection photos are available, ask for a clear close-up of the size label and any area you need to inspect.</p>
+        </article>
+        <article>
+          <h3>Estimate OKEYHAUL shipping costs</h3>
+          <p>Use the destination country and postal code when requesting an international shipping quote. Compare the item subtotal, domestic shipping, any service fees and the international shipping charge in one currency. Record packed weight and box dimensions separately, and check whether import charges appear in the quote or are payable on delivery.</p>
+        </article>
+      </div>
+    </section>
+    <section class="examples" aria-labelledby="examples-title">
+      <h2 id="examples-title">Style references for your shortlist</h2>
+      <p>Use these images to identify details worth checking in a seller’s photos, such as cap closure, print placement, clasp finish and jacket construction.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://in.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-light-reversible-cap--M5785L_PM2_Front%20view.png?hei=480&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Brown Louis Vuitton Monogram cap with a curved brim">
+          <figcaption>Louis Vuitton Monogram cap</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_980x980/1712150176/788093_XJGL6_9074_001_100_0000_Light-printed-cotton-jersey-t-shirt.jpg" width="980" height="980" loading="lazy" decoding="async" alt="White Gucci T-shirt with a green and red chest print">
+          <figcaption>Gucci printed jersey T-shirt</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/clic-h-bracelet--700001FP4Z-worn-3-0-0-800-800_g.jpg?wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Navy Hermès Clic H bracelet worn with a tan jacket">
+          <figcaption>Hermès Clic H bracelet</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/327C25A2970X5803_E01-1?%24default_GHC%24=&amp;crop=457%2C150%2C1095%2C1361&amp;wid=480" width="480" height="597" loading="lazy" decoding="async" alt="Blue hooded Dior jacket with an allover Oblique pattern">
+          <figcaption>Dior Oblique hooded jacket</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Frequently asked questions</h2>
+      <details open>
+        <summary>What is an OKEYHAUL spreadsheet?</summary>
+        <p>It is a list or directory used to organize product finds, source links and notes such as size, photos or weight. Check the current listing for the option you want.</p>
+      </details>
+      <details>
+        <summary>Where do the category links go?</summary>
+        <p>The category links open HipobuyFind. This is an independent guide with no official affiliation with OKEYHAUL or the brands pictured.</p>
+      </details>
+      <details>
+        <summary>Can QC photos prove authenticity?</summary>
+        <p>QC photos can show visible details such as stitching, color and labels. For authenticity, use a seller with verifiable provenance or seek independent authentication.</p>
+      </details>
+      <details>
+        <summary>How do I estimate shipping before ordering?</summary>
+        <p>Ask for the packed parcel weight and dimensions, then request a quote for your country and postal code. Check whether the carrier bills by actual or volumetric weight.</p>
+      </details>
+    </section>
+  </main>
+  <footer><div class="wrap"><a class="catalog" href="https://www.hipobuyfind.com">Visit HipobuyFind</a></div></footer>
+</body>
+</html>
